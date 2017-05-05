@@ -1,6 +1,6 @@
 # Modifying The DOM
 
-You have no successfully grabbed elements from the DOM. Congrats! That's a big deal, and the first step to something great. The next step is a bit more fun. Let's _modify_ the DOM. Through DOM modification we will learn a bit about the difference between Strings and Numbers as well as learn some more on variables. Let's get started!
+You have now successfully grabbed elements from the DOM. Congrats! That's a big deal, and the first step to something great. The next step is a bit more fun. Let's _modify_ the DOM. Through DOM modification we will learn a bit about the difference between Strings and Numbers as well as learn some more on variables. Let's get started!
 
 <iframe height='265' scrolling='no' title='OpwrqM' src='//codepen.io/joemburgess/embed/OpwrqM/?height=265&theme-id=0&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/joemburgess/pen/OpwrqM/'>OpwrqM</a> by Joe Burgess (<a href='http://codepen.io/joemburgess'>@joemburgess</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
@@ -61,3 +61,5 @@ heightSelector.innerHTML = parseInt(heightSelector.innerHTML) + 2
 ```
 
 Now that should work how you planned. Go ahead and play around with setting the initial height to different values. You'll see it is now dynamic. No matter what you put in as the initial setting, we add 2 to it.
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/js-strings-and-numbers-readme'>Strings and Numbers</a> on Learn.co and start learning to code for free.</p>
