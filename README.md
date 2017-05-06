@@ -49,7 +49,7 @@ heightSelector.innerHTML = heightSelector.innerHTML + 2
 ```
 
 On the right of the `=` we grab the current value of the height (`heightSelector.innerHTML`) and then add two to it. If you write that code in the JS tab of the CodePen, you'll get `702`. Woah! That's not right. It just appeneded the `2` to the end of the `70`. That's because we did the `"` around our `70`. This makes our `70` a String. When you add something to a String, it just appends. This is useful for most strings. For example if your name was just `"Joe"` and you wanted to add a
-last name you cou do `"Joe" + " Burgess"` and it would return `"Joe Burgess"`. In this case though, we need to tell Javascript to think of the `70` as a number. 
+last name you could do `"Joe" + " Burgess"` and it would return `"Joe Burgess"`. In this case though, we need to tell Javascript to think of the `70` as a number. 
 
 The way to do that, is simply to wrap your string value in a new thing called `parseInt()`. So if we want the number representation of the height, we just do `parseInt(heightSelector.innerHTML)`. To show you the difference, open up your console, select the CodePen from the drop down and then type `heightSelector.innerHTML`. You'll get `"70"`. Notice the quotes? That means this is a string. If we now type this: `parseInt(heightSelector.innerHTML)`. You'll still get `70`
 but notice the lack of quotes. This means that it's a number.
