@@ -7,6 +7,9 @@ You have now successfully grabbed elements from the DOM. Congrats! That's a big 
 
 Take a look at the code above. It's fairly short. We have a header, two "labels", and two pieces of data. One of them is a name: "Joe Burgess" and one is a height in inches "74". Let's start playing with this to see if we can modify the name and height.
 
+**Note**: If you are having difficulty accessing the code pen displayed above, 
+open a second browser tab and navigate to [the code pen](https://codepen.io/joemburgess/pen/OpwrqM) (https://codepen.io/joemburgess/pen/OpwrqM) before following along.
+
 ### Selecting Elements
 Let's do a quick review of how to select elements on the screen. First, right click and choose inspect. Then select "Console". Finally, remember to change your console to the CodePen by selecting the drop down that says `top` and changing it to "CodePen Preview".
 
