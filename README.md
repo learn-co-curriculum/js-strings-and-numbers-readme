@@ -15,7 +15,7 @@ Let's do a quick review of how to select elements on the screen. First, right cl
 
 ![Codepen](https://web-dev-readme-photos.s3.amazonaws.com/js/select-code-pen.gif)
 
-OK, now click the element inspector icon (![icon](https://web-dev-readme-photos.s3.amazonaws.com/js/elementinspector-icon.png)) and select "Joe Burgess". How can we use Javascript to select it? The `id` looks pretty promising. This is an `id` so we need to begin our selector with the `#` character. Last, the command to select something is `document.querySelector('#name')`. Write that into your console, press Enter and you should get the "Joe Burgess" element.
+OK, now click the element inspector icon (![icon](https://web-dev-readme-photos.s3.amazonaws.com/js/elementinspector-icon.png)) and select "Joe Burgess". How can we use Javascript to select it? The `id` looks pretty promising. This is an `id` so we need to begin our selector with the `#` character. Therefore, the command to select this element is `document.querySelector('#name')`. Write that into your console, press Enter and you should get the "Joe Burgess" element.
 
 I'll leave the next one up to you. Go through the same process and then come out on the other end with the appropriate `document.querySelector()` command that retrieves the height.
 
@@ -31,8 +31,7 @@ Great! You just set the variables `nameSelector` to be `document.querySelector('
 
 We now have two variables: `nameSelector` and `heightSelector` that reference our name and height. All of this you've seen before. Unless you are named Joe Burgess and are 74 inches high, I doubt the information presented in the CodePen is correct. Let's make it right!
 
-If you re-open your Console, change the dropdown to CodePen, type in `nameSelector` and press Enter you'll get the "Joe Burgess" element again. All selectors have an additional feature called `innerHTML`. Let's find out what our `nameSelector`'s `innerHTML` is by typing in the console `nameSelector.innerHTML`. You should immediately see just the name "Joe Burgess". To re-set this name we are going to think back to something we've done before. How did you set the `nameSelector` variable? You used the `=` right? Let's do the same thing here.
-On the left of the equal sign will be what thing we are changing. On the right is what we are changing it to. So `nameSelector.innerHTML = "Avi Flombaum"`. You'll notice the name changes. Congratulations.
+If you re-open your Console, change the dropdown to CodePen, type in `nameSelector` and press Enter you'll get the "Joe Burgess" element again. All selectors have an additional feature called `innerHTML`. Let's find out what our `nameSelector`'s `innerHTML` is by typing in the console `nameSelector.innerHTML`. You should immediately see just the name "Joe Burgess". To re-set this name we are going to think back to something we've done before. We can change the value assigned to the `nameSelector` variable the same way we originally set it: using the `=`. On the left of the equal sign will be the thing we are changing -- in this case, `nameSelector`. On the right is what we are changing it to. So `nameSelector.innerHTML = "Avi Flombaum"`. You'll notice the name changes. Congratulations.
 
 ![whats-my-name](https://web-dev-readme-photos.s3.amazonaws.com/js/whats-my-name.gif)
 
@@ -54,7 +53,7 @@ heightSelector.innerHTML = heightSelector.innerHTML + 2
 On the right of the `=` we grab the current value of the height (`heightSelector.innerHTML`) and then add `2` to it. If you write that code in the JS tab of the CodePen, you'll get `702`. Woah! That's not right. It just appended the `2` to the end of the `70`. That's because we did the `"` around our `70`. This makes our `70` a String. When you add something to a String, it just appends. This is useful for most strings. For example, if your name was just `"Joe"` and you wanted to add a
 last name you could do `"Joe" + " Burgess"` and it would return `"Joe Burgess"`. In this case though, we need to tell Javascript to think of the `70` as a number. 
 
-We need to have Javascript convert the string `"70"` into a number. The way to do that is simply to wrap your string value in a new thing called `parseInt()`. So if we want the number representation of the height, we just do `parseInt(heightSelector.innerHTML)`. To show you the difference, open up your console, select the CodePen from the drop down and then type `heightSelector.innerHTML`. You'll get `"70"`. Notice the quotes? That means this is a String. If we now type this: `parseInt(heightSelector.innerHTML)`. You'll still get `70`
+We need to have Javascript convert the string `"70"` into a number. The way to do that is simply to wrap your string value in a new thing called `parseInt()`. So if we want the number representation of the height, we just do `parseInt(heightSelector.innerHTML)`. To show you the difference, open up your console, select the CodePen from the drop down and then type `heightSelector.innerHTML`. You'll get `"70"`. Notice the quotes? That means this is a String. If we now type this: `parseInt(heightSelector.innerHTML)`, you'll still get `70`
 but notice the lack of quotes. This means that it's a number.
 
 So to finalize everything let's modify our addition line in the JS tab of the CodePen to be:
