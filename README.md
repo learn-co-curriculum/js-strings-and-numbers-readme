@@ -62,6 +62,6 @@ So to finalize everything let's modify our addition line in the JS tab of the Co
 heightSelector.innerHTML = parseInt(heightSelector.innerHTML) + 2
 ```
 
-Now that should work how you planned. Go ahead and play around with setting the initial height to different values. You'll see it is now dynamic. No matter what you put in as the initial setting, we add 2 to it.
+Now that should work how you planned. Go ahead and play around with setting the initial height in the HTML tab to different values. You'll see it is now dynamic. No matter what you put in as the initial setting, we add 2 to it.
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/js-strings-and-numbers-readme'>Strings and Numbers</a> on Learn.co and start learning to code for free.</p>
